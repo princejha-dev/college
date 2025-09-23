@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Mrs. Mehta",
+    "phone": "+91-90000-11111",
+    "subject": "Math"
+  },
+  {
+    "id": 2,
+    "name": "Mr. Sharma",
+    "phone": "+91-90000-22222",
+    "subject": "Science"
+  }
+]

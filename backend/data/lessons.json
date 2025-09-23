@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Math Basics",
+    "category": "Math",
+    "desc": "Addition, subtraction, mental arithmetic"
+  },
+  {
+    "id": 2,
+    "title": "Science - Plants",
+    "category": "Science",
+    "desc": "Parts of a plant, local crops"
+  },
+  {
+    "id": 3,
+    "title": "Digital Literacy",
+    "category": "Digital",
+    "desc": "Using a smartphone and basic apps"
+  }
+]

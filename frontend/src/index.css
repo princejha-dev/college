@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Custom tweaks for mobile responsiveness */
+body {
+	min-width: 0;
+}
+
+.card {
+	@apply rounded-xl shadow-lg p-4 bg-white;
+}
