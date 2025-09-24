@@ -9,7 +9,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/lessons")
+      .get("https://college-xola.onrender.com/api/lessons")
       .then((res) => setLessons(res.data))
       .catch(() => console.log("Offline mode"));
   }, []);
@@ -21,7 +21,7 @@ export default function Dashboard() {
   const saveAttendance = async () => {
     const record = { date: new Date(), students: attendance, notes };
     if (navigator.onLine) {
-      await axios.post("http://localhost:5000/api/attendance", record);
+      await axios.post("https://college-xola.onrender.com/api/attendance", record);
       alert("Attendance synced!");
       setNotes("");
     } else {
@@ -35,7 +35,7 @@ export default function Dashboard() {
   const syncNow = async () => {
     let offline = JSON.parse(localStorage.getItem("offline") || "[]");
     for (let record of offline) {
-      await axios.post("http://localhost:5000/api/attendance", record);
+      await axios.post("https://college-xola.onrender.com/api/attendance", record);
     }
     localStorage.removeItem("offline");
     alert("Offline data synced!");
